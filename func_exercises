@@ -14,27 +14,37 @@ def per_num(num):
     for i in range(1,num):
         if (num % i == 0):
             total += i
-    return total
+    return total == num ?
 
-while True:
-    num = input("Type Number:")
+for i in range(1,1001):
+    if(per_num(i)): ?
+        print("Perfect Number:",i)
+        
+        
+  print("\nHocanın Çözümü\n")
+   
+   def mukemmel(sayı):
     
-    if (num == "q"):
-      print("See yea mate")
-      break
-    else:
-      num = int(num)
-      per_num(num)
-      if (total == num)
-        print(num,"yes perfect")
-      else:
-        print(num,"nope")
+    toplam = 0
+    
+    for i in range(1,sayı):
+        
+        if (sayı % i == 0):
+            toplam += i
+            
+    return toplam == sayı
+
+
+for i in range(1,1001):
+    if (mukemmel(i)):
+        print("Mükemmel Sayı:",i)
+        
         
 print("\n***\nFunctions_Exercise_2\n***")
 
 print("\nKullanıcıdan 2 tane sayı alarak bu sayıların en büyük ortak bölenini (EBOB) dönen bir tane fonksiyon yazın.\n")
 
-def gcd(num_1,num_2)
+def gcd(num_1,num_2):
     num_1_l = []
     num_2_l = []
     for x in range(1,num_1):
@@ -56,3 +66,33 @@ while True:
         break
     else:
         print(max(gcd_num))
+        
+        
+   print("\nHocanın Çözümü\n")
+   
+   def ebob_bulma(sayı1,sayı2):
+    
+    i = 1
+    ebob = 1
+    while (i <= sayı1 and i <= sayı2 ):
+
+        if ( not (sayı1 % i) and not (sayı2 % i)):
+            ebob = i
+        i += 1
+    return ebob
+sayı1 = int(input("Sayı-1:"))
+sayı2 = int(input("Sayı-2:"))
+
+print("Ebob:",ebob_bulma(sayı1,sayı2))
+
+print("\nAçıklama\n"
+"ebob'u neden 1'e eşitledi?\n"
+"i iki sayıdan da küçük olana kadar devam edecek döngü\n"
+"if not sayı1 % i bölünemiyorsa ifadesi mi taşıyor\n"
+"yukarıdakinin anlamına göre ebob = i de anlam kazanak\n"
+"i += 1 döngünün ilerlemesi için anlaşılabilir\n"
+"inputlar anlaşılıyor, int olarak input alıyor\n"
+"ebob_bulma fonksiyonunu inputlar üzerinden çağırdığında da return ortaya çıkıyor\n")
+
+
+
