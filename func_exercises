@@ -70,7 +70,7 @@ while True:
         
    print("\nHocanın Çözümü\n")
    
-   def ebob_bulma(sayı1,sayı2):
+def ebob_bulma(sayı1,sayı2):
     
     i = 1
     ebob = 1
@@ -92,7 +92,14 @@ print("\nAçıklama\n"
 "yukarıdakinin anlamına göre ebob = i de anlam kazanak\n"
 "i += 1 döngünün ilerlemesi için anlaşılabilir\n"
 "inputlar anlaşılıyor, int olarak input alıyor\n"
-"ebob_bulma fonksiyonunu inputlar üzerinden çağırdığında da return ortaya çıkıyor\n")
+"ebob_bulma fonksiyonunu inputlar üzerinden çağırdığında da return ortaya çıkıyor\n"
+"en büyüğünü vermesi ifadesini ney oluşturuyor\n")
 
+print("\n\n***\nFunctions_Exercise_3\n***")
 
+print("\nKullanıcıdan 2 tane sayı alarak bu sayıların en küçük ortak katlarını (EKOK) dönen bir tane fonksiyon yazın.\n")
+
+def find_lcm(num_1,num_2):
+    
+i = 1
 
