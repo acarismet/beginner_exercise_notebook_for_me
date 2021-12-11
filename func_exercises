@@ -103,3 +103,36 @@ def find_lcm(num_1,num_2):
     
 i = 1
 
+
+
+
+
+
+
+
+print("\n\n***\nFunctions_Exercise_4\n***")
+
+print("\nKullanıcıdan 2 basamaklı bir sayı alın ve bu sayının okunuşunu bulan bir fonksiyon yazın.\n")
+
+#input q durumu 
+
+def double_digit_name(num):
+    left = num // 10
+    right = num % 10
+    s_left = ["Ten","Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","Ninety"]
+    s_right = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine"]
+    if (right == 0):
+        print(" ")
+    else: 
+        return (s_left[left - 1] + " " + s_right[right - 1])
+
+num = range(10,100)
+while True:
+    num = input("Double Digit Number:")
+    if (num == "q"):
+       print("See you next time")
+       break
+    else:
+        num = int(num)
+        print (double_digit_name(num))
+        
