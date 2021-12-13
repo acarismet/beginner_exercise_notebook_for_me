@@ -3,7 +3,7 @@
 print("\n***\nCalculator_For_Math_Module\n***")
 
 """
-try ve except bitince bunu dene
+try ve except bitince bunlar denenebilir
 
 Press "q" to exit
 Press "c" to clean current number
@@ -11,33 +11,21 @@ Press "b" to go one operation back
 Dial "cc" to clean all 
 """
 
-a = math.floor(x)
-b = math.ceil(x)
-c = math.trunc(x)
-d = math.factorial(x)
-e = math.sqrt(x)
-
-f = math.copysign(x,y)
-g = math.fmod(x,y)
-h = math.gcd(x,y)
-i = math.log(x,y)
-j = math.pow(x,y)
 
 
-
-
-
-""""""""""""""""""
 **********************************************
-Calculator BACK UP
+Calculator HOMEWORK
 **********************************************
+
 """
-Press "q" to exit
+Press "q" to exit in operation section
+Dial "clear" to change and restart operation sort
 """
 import math
 
-print("For one numbered operation dial 'one' otherwise dial 'dub'\n"
-"to exit dial 'q'\n\n")
+print("# For one numbered operation dial 'one' otherwise dial 'dub'\n"
+"# Press 'q' to exit in operation section\n"
+"# Dial 'clear' to change and restart operation sort\n\n")
 
 while True:
   o = input("\nFirst Operation Choose:")
@@ -45,7 +33,7 @@ while True:
     print("\nSee you next time")
     break
   else:
-    if (o == "one"):
+    if (o == "one" or o == "ONE"):
       print("\n\nYou chose one numbered operation."
             "\nPlease dial your number")
     
@@ -53,15 +41,17 @@ while True:
     
       print("\n\nYou can choose from option a to e.\n"
           "If you want to change operation to two numbered one\n"
-          "please dial 'dub' to 'sys_Operation:' section")
+          "please dial 'clear' to 'Operation:' section")
       print("\n\na : floor\tb : ceil\tc: trunc\n"
             "d: factorial\te: sqrt\n\n")
     
-      ops1 = input("\nsys_Operation:")
+      ops1 = input("\nOne_Numbered_Operation:")
 
       if (ops1 == "q"):
-        print("\nSee you next time")
+        print("\nSee you next time\n")
         break
+      elif (ops1 == "clear"):
+        continue
       else:
         if(ops1 == "a"):
           print(math.floor(x))
@@ -74,6 +64,37 @@ while True:
         elif(ops1 == "e"):
           print(math.sqrt(x))
         
-**********************************************
-Calculator BACK UP
-**********************************************
+
+        
+    elif (o == "dub" or o == "DUB"):
+      print("\n\nYou chose two numbered operation."
+            "\nPlease dial first and second number with ','\n")
+      x_list = []
+      x = float(input("\nFirst Number:"))
+      x_list.append(x)
+      y = float(input("\nSecond Number:"))
+      x_list.append(y)
+
+      print("\n\nYou can choose from option f to j.\n"
+          "If you want to change operation to one numbered one\n"
+          "please dial 'clear' to 'Operation:' section\n\n")
+      print("f : copysign\tg : fmod\th: gcd\n"
+            "i: log\t\tj: pow\n")
+      ops2 = input("\nTwo_Numbered_Operation:")
+
+      if (ops2 == "q"):
+        print("\nSee you next time\n")
+        break
+      elif (ops2 == "clear"):
+        continue
+      else:
+        if(ops2 == "f"):
+          print(math.copysign(x_list[0],x_list[1]))
+        elif(ops2 == "g"):
+          print(math.fmod(x_list[0],x_list[1]))
+        elif(ops2 == "h"):
+          print(math.gcd(int(x_list[0]),int(x_list[1])))
+        elif(ops2 == "i"):
+          print(math.log(x_list[0],x_list[1]))
+        elif(ops2 == "j"):
+          print(math.pow(x_list[0],x_list[1]))
