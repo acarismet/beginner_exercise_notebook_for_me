@@ -1,0 +1,37 @@
+"""IT'S A BEGINNER TEST STEPS FOR HOMEWORK FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("\n***\nCalculator_For_Math_Module\n***")
+
+"""
+Press "q" to exit
+Press "c" to clean current number
+Press "b" to go one operation back
+Dial "cc" to clean all 
+"""
+import math
+import time
+
+a = math.floor(x)
+b = math.ceil(x)
+c = math.copysign(x,y)
+d = math.factorial(x)
+e = math.fmod(x,y)
+f = math.gcd(x,y)
+g = math.trunc(x)
+h = math.log(x,y)
+i = math.pow(x,y)
+j = math.sqrt(x)
+
+while True:
+  x = input("Number:")
+  time.sleep(1)
+  o = input("Operation:")
+  if (x == "q" or o == "q"):
+    print("See you next time")
+    break
+  elif(x == "c" or o == "c"):
+    i = 
+
+  else:
+    x = int(x)
+    if()
