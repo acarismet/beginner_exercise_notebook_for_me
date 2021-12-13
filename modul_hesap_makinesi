@@ -3,13 +3,13 @@
 print("\n***\nCalculator_For_Math_Module\n***")
 
 """
+try ve except bitince bunu dene
+
 Press "q" to exit
 Press "c" to clean current number
 Press "b" to go one operation back
 Dial "cc" to clean all 
 """
-import math
-import time
 
 a = math.floor(x)
 b = math.ceil(x)
@@ -22,16 +22,40 @@ h = math.log(x,y)
 i = math.pow(x,y)
 j = math.sqrt(x)
 
+""""""""""""""""""
+**********************************************
+Calculator BACK UP
+**********************************************
+""
+Press "q" to exit
+"""
+import math
+
+print("For one numbered operation dial 'one' otherwise dial 'dub'\n"
+"to exit dial 'q'")
+
 while True:
-  x = input("Number:")
-  time.sleep(1)
-  o = input("Operation:")
-  if (x == "q" or o == "q"):
+  o = input("First Operation Choose:")
+  if (o == "q"):
     print("See you next time")
     break
-  elif(x == "c" or o == "c"):
-    i = 
-
   else:
-    x = int(x)
-    if()
+    if (o == "one"):
+      print("You chose one numbered operation."
+    "\nPlease dial your number")
+    
+      x = float(input("One Number:"))
+    
+      print("You can choose from option a to e.\n"
+    "If you want to change operation to two numbered one\n"
+    "Please dial 'dub' to 'sys_Operation:' section")
+    
+      ops1 = input("sys_Operation:")
+
+      if (ops1 == "q"):
+        print("See you next time")
+        break
+        
+**********************************************
+Calculator BACK UP
+**********************************************
