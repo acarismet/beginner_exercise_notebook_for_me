@@ -13,48 +13,66 @@ Dial "cc" to clean all
 
 a = math.floor(x)
 b = math.ceil(x)
-c = math.copysign(x,y)
+c = math.trunc(x)
 d = math.factorial(x)
-e = math.fmod(x,y)
-f = math.gcd(x,y)
-g = math.trunc(x)
-h = math.log(x,y)
-i = math.pow(x,y)
-j = math.sqrt(x)
+e = math.sqrt(x)
+
+f = math.copysign(x,y)
+g = math.fmod(x,y)
+h = math.gcd(x,y)
+i = math.log(x,y)
+j = math.pow(x,y)
+
+
+
+
 
 """"""""""""""""""
 **********************************************
 Calculator BACK UP
 **********************************************
-""
+"""
 Press "q" to exit
 """
 import math
 
 print("For one numbered operation dial 'one' otherwise dial 'dub'\n"
-"to exit dial 'q'")
+"to exit dial 'q'\n\n")
 
 while True:
-  o = input("First Operation Choose:")
+  o = input("\nFirst Operation Choose:")
   if (o == "q"):
-    print("See you next time")
+    print("\nSee you next time")
     break
   else:
     if (o == "one"):
-      print("You chose one numbered operation."
-    "\nPlease dial your number")
+      print("\n\nYou chose one numbered operation."
+            "\nPlease dial your number")
     
-      x = float(input("One Number:"))
+      x = float(input("\nOne Number:"))
     
-      print("You can choose from option a to e.\n"
-    "If you want to change operation to two numbered one\n"
-    "Please dial 'dub' to 'sys_Operation:' section")
+      print("\n\nYou can choose from option a to e.\n"
+          "If you want to change operation to two numbered one\n"
+          "please dial 'dub' to 'sys_Operation:' section")
+      print("\n\na : floor\tb : ceil\tc: trunc\n"
+            "d: factorial\te: sqrt\n\n")
     
-      ops1 = input("sys_Operation:")
+      ops1 = input("\nsys_Operation:")
 
       if (ops1 == "q"):
-        print("See you next time")
+        print("\nSee you next time")
         break
+      else:
+        if(ops1 == "a"):
+          print(math.floor(x))
+        elif(ops1 == "b"):
+          print(math.ceil(x))
+        elif(ops1 == "c"):
+          print(math.trunc(x))
+        elif(ops1 == "d"):
+          print(math.factorial(x))
+        elif(ops1 == "e"):
+          print(math.sqrt(x))
         
 **********************************************
 Calculator BACK UP
