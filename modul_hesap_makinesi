@@ -99,3 +99,91 @@ while True:
                               print(math.log(x_list[0], x_list[1]))
                         elif (ops2 == "j"):
                               print(math.pow(x_list[0], x_list[1]))
+
+
+
+****************************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+*******************************************VERSION SUCCESSFULLY TESTED******************************************
+****************************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+
+import math
+
+print("# For one numbered operation dial 'one' otherwise dial 'dub'\n"
+      "# Press 'q' to exit in operation section\n"
+      "# Dial 'clear' to change and restart operation sort\n\n")
+
+while True:
+      o = input("\nFirst Operation Choose:")
+      if (o == "q"):
+            print("\nSee you next time")
+            break
+      else:
+            if (o == "one" or o == "ONE"):
+                  print("\n\nYou chose one numbered operation."
+                        "\nPlease dial your number")
+
+                  x = float(input("\nOne Number:"))
+
+                  print("\n\nYou can choose from option a to e.\n"
+                        "If you want to change operation to two numbered one\n"
+                        "please dial 'clear' to 'Operation:' section")
+                  print("\n\na : floor\tb : ceil\tc: trunc\n"
+                        "d: factorial\te: sqrt\n\n")
+
+                  ops1 = input("\nOne_Numbered_Operation:")
+
+                  if (ops1 == "q"):
+                        print("\nSee you next time\n")
+                        break
+                  elif (ops1 == "clear"):
+                        continue
+                  else:
+                        if (ops1 == "a"):
+                              print(math.floor(x))
+                        elif (ops1 == "b"):
+                              print(math.ceil(x))
+                        elif (ops1 == "c"):
+                              print(math.trunc(x))
+                        elif (ops1 == "d"):
+                              print(math.factorial(x))
+                        elif (ops1 == "e"):
+                              print(math.sqrt(x))
+
+
+
+            elif (o == "dub" or o == "DUB"):
+                  print("\n\nYou chose two numbered operation."
+                        "\nPlease dial first and second number\n")
+
+                  x = float(input("\nFirst Number:"))
+                  y = float(input("\nSecond Number:"))
+
+                  print("\n\nYou can choose from option f to j.\n"
+                        "If you want to change operation to one numbered one\n"
+                        "please dial 'clear' to 'Operation:' section\n\n")
+                  print("f : copysign\tg : fmod\th: gcd\n"
+                        "i: log\t\tj: pow\n")
+                  ops2 = input("\nTwo_Numbered_Operation:")
+
+                  if (ops2 == "q"):
+                        print("\nSee you next time\n")
+                        break
+                  elif (ops2 == "clear"):
+                        continue
+                  else:
+                        if (ops2 == "f"):
+                              print(math.copysign(x,y))
+                        elif (ops2 == "g"):
+                              print(math.fmod(x,y))
+                        elif (ops2 == "h"):
+                              x = int(x)
+                              y = int(y)
+                              print(math.gcd(x,y))
+                        elif (ops2 == "i"):
+                              print(math.log(x,y))
+                        elif (ops2 == "j"):
+                              print(math.pow(x,y))
